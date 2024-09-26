@@ -1,0 +1,53 @@
+body{
+    background: linear-gradient(120deg, rgba(209, 112, 15, 0.685) 20%, rgb(216, 49, 30) 86%);
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.garis{
+    width: 75%; /* memberikan lebar */
+    height: 10px; /* memberikan panjang */
+    background-color: rgb(45, 81, 75); /* memberikan warna dari garis */
+    border: none; /* Menghilangkan border elemen */
+    margin: 20px auto; /* Menambahkan jarak 20px di atas dan bawah */
+    border-radius: 5px;  /* Membuat sudut elemen menjadi melengkung */
+    box-shadow: 5px 5px 15px rgba(31, 30, 30, 0.5); /* membuat bayangan */
+}
+.kalimat{
+    text-align: center;
+}
+/* memberikan style pada selektor kelas kotak */
+.kotak {
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.5) ; /* Menghilangkan border elemen */
+    border-collapse: collapse; /* menghilangkan garisan pada tabel */
+    width: 300px; /* memberikan lebar pada tabel  */
+    border-radius: 8px; /* Membuat sudut tabel menjadi melengkung */
+    overflow: hidden; /* memberikan lengkungan pada tabel bagian atas */
+    /* Menambahkan animasi transisi pada bayangan saat tabel dihover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    
+    
+}
+
+.kotak-pengumuman{
+    padding: 20px; /* menambahkan jarak di dalam element */
+    border-radius: 10px; /* Membuat sudut tabel menjadi melengkung */ 
+    box-shadow: 5px 5px 15px  rgba(34, 33, 33, 0.5) ; /* membuat bayangan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.kotak-pengumumanin:focus {
+    /* memberikan bayangan saat kursor mouse berada di tabel */
+   background-color: aqua;
+}
+ul.bullet-style li{
+    /* Menambahkan bullet berbentuk lingkaran untuk setiap item yang ada dalam daftar  */
+    list-style-type: disc;
+    padding: 5px; /* Menambahkan jarak 10px di atas dan bawah setiap item */
+    width: 150px; /* memberikan lebar */
+}
+ol.number-sttyle li{
+    /* Menggunakan angka sebagai penanda untuk setiap item */
+    list-style-type: decimal;
+    padding: 5px ; /* Menambahkan jarak 10px di atas dan bawah setiap item */
+    width: 150px; /* memberikan lebar */
+}
