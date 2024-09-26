@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tugas.css">
+    <title>BELAJAR HTML DAN CSS</title>
+    <style>
+        .container{
+            /* memberikan tampilan layout menjadi sejajar kiri ke kanan  */
+            display: flex;
+            justify-content: center; /* memberikan conntent nya berada di tengah */
+            gap: 25px; /* memberikan jarak antara layout yang ada di dalam */
+            margin-top: 50px; /* memberikan jarak layout pada bagian atas  */
+        }
+        th,td {
+            padding: 10px; /* menambahkan jarak di dalam element th, td */
+            text-align: left;/* memerikan text nya berada di tengah */
+        }
+        /* memberikan style pada selektor pseudo-class table */
+        .kotak:hover {
+            /* memberikan bayangan saat kursor mouse berada di tabel */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        th{
+            /* memerikan warna background putih */
+            background-color: #ffffff;
+        }
+        
+        .kalimat{
+            text-align: center;
+        }
+        
+        .kotak-pengumuman:hover {
+            /* memberikan bayangan saat kursor mouse berada di tabel */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- memberikan kelas kalimat -->
+    <div class="kalimat">
+    <h1>Daftar Kelompok Dan List Pengumuman Juara</h1>
+    <!-- memberikan garis ( hr ) dan memberikan kelas dengan nama "garis" -->
+    <hr class="garis">
+    <h3>Berikut Dafta Dan List</h3>
+    </div>
+    <!-- memberikan kelas container -->
+    <div class="container">
+        <div>
+            <h2 style="text-align: center;">Kelompok 1</h2> 
+            <div>
+                <table class="kotak">
+                    <thead> 
+                        <tr>
+                        <th>Nomor</th>
+                        <th>Nama</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Teguh </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Giita</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Dea</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Dhimas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+        <h2 style="text-align: center;">Kelompok 2</h2>
+        <div>
+            <table class="kotak">
+                <thead> 
+                    <tr>
+                    <th>Nomor</th>
+                    <th>Nama</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Agung</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Alya Rahma</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Alya Tokalang</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Awalia</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="kotak-pengumuman"> 
+            <h3 class="kalimat">Juara Lomba Epep</h3> <!--memberikan kelas pada h3-->
+            <ol class="number-sttyle"> <!-- memberikan kelas pada ol -->
+                <li>Zul</li>
+                <li>Galang</li>
+                <li>Alif</li>
+            </ol>
+        </div>
+        <div class="kotak-pengumuman">
+        <h3 class="kalimat">List Wibu</h3> <!--memberikan kelas pada h3-->
+            <ul class="bullet-style"> <!--memberikan kelas pada ul-->
+                <li>Galang</li>
+                <li>Ali</li>
+                <li>Dwi</li>
+            </ul>
+        </div>
+    </div>
+    <hr class="garis">
+</body>
+</html>
